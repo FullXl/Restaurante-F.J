@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivrn.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="index.html" class="logo">F.J Restaurant</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index2.html">Ubicación</a></li>
+                    <li><a href="#reservar">Reservar</a></li>
+                    <li><a href="index3.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            
+            <div class="header-txt">
+                <h1>Conoce nuestro restaurante</h1>
+                <p>
+                    En el corazón de París, se encuentra un encantador rincón gastronómico conocido como F.J Restaurant. 
+                    Fundado en 1985 por el apasionado chef francés, Fernando Jiménez, este restaurante se ha convertido en un punto 
+                    de referencia para los amantes de la auténtica cocina francesa.
+                </p>
+                <a href="#platillos" class="btn-1">Nuestros Platillos</a>
+        
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="platillos" class="content sau">
+        <h2 class="title">Nuestros Platillos</h2><br>
+        <p class="history">La historia de Fernando Jiménez comenzó hace décadas, 
+            cuando decidió compartir su amor por la cocina tradicional de su país natal con el mundo.
+             Con una dedicación inquebrantable y un enfoque en los ingredientes frescos y de temporada, 
+             Fernando logró cautivar los paladares de locales y turistas por igual.</p>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/62908f8f16215.jpeg" alt="...">
+                    <h3>Coq au Vin</h3><br>
+                    <p>Pollo cocido lentamente en vino tinto, 
+                        generalmente con champiñones, cebollas, zanahorias y ajo</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/img9735.whqc_768x512q80.jpg" alt="...">
+                    <h3>Bouillabaisse</h3><br>
+                    <p> Se elabora con una variedad de pescados frescos,
+                         mariscos, tomates, ajo, hinojo y otras hierbas aromáticas.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/escargots-a-la-bourguignonne.webp" alt="...">
+                    <h3>Escargots de Bourgogne</h3><br>
+                    <p>Caracoles de tierra cocidos en mantequilla, ajo, perejil y vino blanco.</p>
+                </div>
+
+            </div>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/VCIJ4ILQNBGN5K77OMDN6ELQSM.avif" alt="...">
+                    <h3>Ratatouille</h3><br>
+                    <p>Se prepara con berenjenas, calabacines, pimientos, tomates, cebollas y ajo, 
+                        cocidos lentamente en aceite de oliva y sazonados con hierbas provenzales.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/cassoulet.avif" alt="...">
+                    <h3>Cassoulet</h3><br>
+                    <p> Guiso tradicional del suroeste de Francia que combina alubias blancas 
+                        con diferentes tipos de carne, como salchichas, cerdo, pato o cordero.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/cfb89a34-283c-442a-a7ba-e3674cf86b38.jpg" alt="...">
+                    <h3>Salade Niçoise</h3><br>
+                    <p>Se compone de lechuga, tomates, huevos duros, atún en conserva, aceitunas, judías verdes, pepinos y papas, 
+                        todo ello aderezado con una vinagreta de aceite de oliva, vinagre y hierbas frescas</p>
+                </div>
+
+            </div>
+ 
+    </section>
+    <section id="reservar" class="form-box">
+        <div class="form-container"">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6f0f3f8b-965d-40b6-bb9a-7d7688d71ef3">
+                <h2>Reserva tu hora Aqui</h2>
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="Nombre" placeholder="Nombre" required><br>
+          
+                <label for="email">Correo:</label><br>
+                <input type="email" id="email" name="Correo" placeholder="Correo" required><br>
+
+                <label for="fecha">Fecha:</label><br>
+                <input type="date" id="fecha" name="Fecha" required><br>
+
+                <label for="hora">Hora:</label><br>
+                <input type="time" id="hora" name="Hora" required><br>
+
+                <label for="persona">Número de Personas:</label><br>
+                <select id="persona" name="Personas" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            
+                <button class="but" type="submit">Reservar</button>
+            </form>
+          </div>
+    </section>
+
+</body>
+</html>

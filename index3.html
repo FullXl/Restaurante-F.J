@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="menu container">
+
+            <a href="index.html" class="logo">F.J Restaurant</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index2.html">Ubicación</a></li>
+                    <li><a href="index.html#reservar">Reservar</a></li>
+                    <li><a href="index3.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <section>
+            <div class="contenedor"> 
+                <div class="formulario">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="6f0f3f8b-965d-40b6-bb9a-7d7688d71ef3">
+                        <h2>Iniciar Sesión</h2>
+
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" required>
+                            <label for="#">Email</label>
+                        </div>
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" required>
+                            <label for="#">Contraseña</label>
+                        </div>
+                        <div class="olvidar">
+                            <label for="#">
+                                <input type="checkbox"> Recordar
+                                <a href="#">Olvidé la contraseña</a>
+                            </label>
+                        </div>
+                        <button type="submit">Acceder</button>
+                    </form>
+                    
+                    <div>
+
+                        <div class="registrar">
+                            <p>No tengo Cuenta<a href="index4.html">Crear una Cuenta</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
