@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/*
+font-family: 'Roboto Condensed', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+    rgba(0,0,0,0.418),
+    rgba(0,0,0,0.418)),
+    url(images/Ratatuil.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(63, 63, 63, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #266371;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons i{
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: #266371;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt{
+    width: 40%;
+    margin-left: 70px;
+}
+
+.header-txt h1{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fdfdfd;
+    margin-bottom: 25px;
+}
+
+.header-txt p{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #266371;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.content{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.sau{
+    padding: 30px;
+    background: #1f1d1d;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{
+    height: 21rem;
+    width: 17rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #101010;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+.box-container .box p{
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+.box-container .box img{
+    height: 10rem;
+    width: 17rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.form-box{
+    background-image: url(images/restaurant.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container{
+    position: relative;
+    width: 400px;   
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 520px;
+    display: flex;
+    background-color: rgba(193, 213, 132, 0.214);
+    padding: 10px;
+}
+
+.form-container label{
+    color: #fff;
+    margin: 20px;
+}
+
+.form-container input[type=text], input[type=email], 
+input[type=date], input[type=time], select{
+    width: 140%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.form-container h2{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    transform: translateX(8vh);
+    margin-bottom: 20px;
+}
+
+.form-container .but {
+    width: 80%;
+    background-color: #ffffff;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transform: translateX(12.5vh);
+}
+
+.form-container .but:hover {
+    background-color: rgb(222, 249, 140);
+}
+
+@media(max-width:991px){
+
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3f3f3f48;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    
+    .icons{
+        display: none;
+    }
+
+    .header{
+        padding: 80px 30px 50px 30px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-txt{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .header-txt h1{
+        margin-bottom: 10px;
+    }
+
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .sau{
+        height: 430vh;
+    }
+
+}
